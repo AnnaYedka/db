@@ -43,7 +43,7 @@
   - FOREIGN KEY client_id REFERENCES Client(id) 
   - FOREIGN KEY recipe_id REFERENCES Recipe(id) NN
   - rating SMALLINT NN
-  - commnent VARCHAR(255) NN
+  - commnent VARCHAR(255)
 
 6. `Recipe`
   - id BIGSERIAL PRIMARY KEY NN
@@ -51,7 +51,7 @@
   - FOREIGN KEY category_id REFERENCES MealCategory(id)
   - time DECIMAL(2,2) NN
   - title VARCHAR(50) NN
-  - description VARCHAR(Max) NN
+  - description TEXT NN
 
 7. `MealCategory`
   - id SERIAL PRIMARY KEY NN
