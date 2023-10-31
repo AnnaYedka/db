@@ -40,7 +40,7 @@
 
 5. `Review`
   - id BIGSERIAL PRIMARY KEY NN
-  - FOREIGN KEY client_id REFERENCES Client(id) NN
+  - FOREIGN KEY client_id REFERENCES Client(id) 
   - FOREIGN KEY recipe_id REFERENCES Recipe(id) NN
   - rating SMALLINT NN
   - commnent VARCHAR(255) NN
@@ -48,7 +48,7 @@
 6. `Recipe`
   - id BIGSERIAL PRIMARY KEY NN
   - FOREIGN KEY author_id REFERENCES User(id) NN
-  - FOREIGN KEY category_id REFERENCES MealCategory(id) NN
+  - FOREIGN KEY category_id REFERENCES MealCategory(id)
   - time DECIMAL(2,2) NN
   - title VARCHAR(50) NN
   - description VARCHAR(Max) NN
@@ -59,7 +59,7 @@
 
 8. `ShoppingItem`
   - id BIGSERIAL PRIMARY KEY NN
-  - FOREIGN KEY user_id REFERENCES Client(id) NN
+  - FOREIGN KEY client_id REFERENCES Client(id) NN
   - FOREIGN KEY ingredient_id REFERENCES Ingredient(id) NN
   - amount INTEGER NN
 
