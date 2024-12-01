@@ -75,4 +75,5 @@
   - FOREIGN KEY ingredient_id REFERENCES Ingredient(id) NN
   - amount INTEGER NN
 
-![db.pdf](https://github.com/AnnaYedka/db/files/12793723/db.pdf)
+
+[db_new-2.pdf](https://github.com/user-attachments/files/17969821/db_new-2.pdf)
